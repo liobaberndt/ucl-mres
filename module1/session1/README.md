@@ -75,7 +75,7 @@ If this worked, you should see the repository files listed inside MATLAB.
 Now we make a tiny script to verify MATLAB runs code correctly.
 Set your working directory (where your git is for example for me):
 ``` bash
-'/Users/liobaberndt/Library/CloudStorage/Dropbox/UCL/supervision/ucl-mres'
+cd '/Users/liobaberndt/Library/CloudStorage/Dropbox/UCL/supervision/ucl-mres/module1/session1'
 ```
 In MATLAB, click New Script.
 Save it inside this repository folder as:
