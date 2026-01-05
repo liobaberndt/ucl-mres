@@ -3,12 +3,8 @@
 ### What you will learn in this session
 In this session you will:
 - work with spectra that contain multiple frequency components
-- practise interpreting EEG-like spectra in words
 - become familiar with writing in LaTeX using Overleaf
 - create a properly formatted thesis document
-- start writing background and conceptual sections
-
-This session focuses on **interpretation, language, and professional writing practice**.
 
 ---
 
@@ -141,3 +137,4 @@ You are finished with Session 5 if:
 - you wrote initial background text using LaTeX formatting
 
 ---
+
