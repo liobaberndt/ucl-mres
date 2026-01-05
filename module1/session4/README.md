@@ -122,25 +122,29 @@ For each paper:
 Add the following papers to your Zotero collection.
 
 ### Paper 1
-Clementz et al.  
+Clementz et al.
+
 *Psychosis Biotypes: Replication and Validation from the B-SNIP Consortium*
 
 ---
 
 ### Paper 2
 Newson & Thiagarajan
+
 *EEG Frequency Bands in Psychiatric Disorders: A Review of Resting State Studies*
 
 ---
 
 ### Paper 3
 Insel et al. 
+
 *Research Domain Criteria (RDoC): Toward a New Classification Framework for Research on Mental Disorders*
 
 ---
 
 ### Paper 4
 Chen, Kiebel, Friston 
+
 *Dynamic causal modelling of induced responses*
 
 ---
@@ -173,4 +177,5 @@ You are finished with Session 4 if:
 "## Important note
 Understanding will develop over time.
 These papers will be revisited as your coding skills and modelling tools expand.
+
 
