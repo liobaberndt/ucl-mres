@@ -1,4 +1,4 @@
-## Session 2 — Running Code and Visual Feedback
+## Session 2 - Running Code and Visual Feedback
 
 ### What you will learn in this session
 In this session you will learn how MATLAB runs code and how to check whether
@@ -13,7 +13,7 @@ By the end of this session you will be able to:
 
 ---
 
-## Part A — What a MATLAB script is
+## Part A - What a MATLAB script is
 
 A MATLAB script is a text file that contains instructions.  
 MATLAB runs these instructions **from top to bottom**.
@@ -23,7 +23,7 @@ This is how we explore and debug code.
 
 ---
 
-## Part B — Example: creating and plotting a signal
+## Part B - Example: creating and plotting a signal
 
 ### B1. Open the example script
 Open the file:
@@ -59,7 +59,7 @@ Changing one thing at a time is an important habit.
 
 ---
 
-## Part C — Exercise 1: modifying a single signal
+## Part C - Exercise 1: modifying a single signal
 
 ### C1. Open the exercise script
 Open:
@@ -88,7 +88,7 @@ When the script runs without errors and produces a sensible plot, the exercise i
 
 ---
 
-## Part D — Example: comparing two signals
+## Part D - Example: comparing two signals
 
 ### D1. Open the comparison example
 Open:
@@ -113,7 +113,7 @@ Subplots allow you to compare results visually.
 
 ---
 
-## Part E — Exercise 2: comparing two signals
+## Part E - Exercise 2: comparing two signals
 
 ### E1. Open the exercise script
 Open:
@@ -151,7 +151,7 @@ What matters is that:
 
 ---
 
-## Part G — Save your work to GitHub
+## Part G - Save your work to GitHub
 
 ### G1. Check what changed
 In the terminal, inside the repository folder, run:
@@ -195,3 +195,4 @@ You are finished with Session 2 if:
 - you committed and pushed your changes
 
 ---
+
