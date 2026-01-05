@@ -7,6 +7,21 @@ In this session you will:
 - create a properly formatted thesis document
 
 ---
+## Part 0 - Git workflow
+
+Before starting this session, make sure your local repository is up to date.
+
+```bash
+git pull
+```
+After completing this session:
+commit your changes regularly
+push them to GitHub
+```bash
+git add .
+git commit -m "Session 5: multi-frequency spectra and Overleaf setup"
+git push
+```
 
 ## Part A - Why this session matters
 
@@ -137,5 +152,6 @@ You are finished with Session 5 if:
 - you wrote initial background text using LaTeX formatting
 
 ---
+
 
 
