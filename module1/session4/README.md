@@ -175,9 +175,4 @@ You are finished with Session 4 if:
 
 ---
 
-"## Important note
-Understanding will develop over time.
-These papers will be revisited as your coding skills and modelling tools expand.
-
-
 
