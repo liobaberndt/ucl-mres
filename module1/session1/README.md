@@ -9,7 +9,7 @@ By the end of this session you will be able to:
 
 ---
 
-## Part A — GitHub and getting this folder onto your computer
+## Part A - GitHub and getting this folder onto your computer
 ---
 
 ### A1. Install Git (only once)
