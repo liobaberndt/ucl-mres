@@ -104,7 +104,7 @@ This way I can directly comment on your thesis/make chnages in real-time
 
 ---
 
-## Part E — Creating a structured outline
+## Part E - Creating a structured outline
 
 In your LaTeX document, create the following sections using proper LaTeX commands:
 
@@ -137,4 +137,5 @@ You are finished with Session 5 if:
 - you wrote initial background text using LaTeX formatting
 
 ---
+
 
