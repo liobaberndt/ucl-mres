@@ -1,4 +1,5 @@
 ## Session 3 - Noise, Variability, and Intrinsic EEG Activity (IEA)
+First run in the terminal: git pull
 
 ### What you will learn in this session
 In this session you will:
@@ -102,7 +103,7 @@ This prepares you for thinking about trials, epochs, and averaging later.
 ## Part C - Paper reading: first pass (Intrinsic EEG Activity)
 
 In this project, we will work towards reproducing EEG findings from a key paper  
-and later explaining them mechanistically using DCM.
+and later explaining them mechanistically using DCM. This paper (also available in the folder): https://pmc.ncbi.nlm.nih.gov/articles/PMC8781330/pdf/sbab090.pdf
 
 This session is your **first pass** at reading the paper.  
 You are not expected to understand everything.
@@ -174,3 +175,4 @@ You are finished with Session 3 if:
 - you wrote and committed your IEA reading notes
 
 ---
+
