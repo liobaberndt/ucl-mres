@@ -1,5 +1,5 @@
 ## Session 2 - Running Code and Visual Feedback
-
+First run in the terminal: git pull
 ### What you will learn in this session
 In this session you will learn how MATLAB runs code and how to check whether
 your code is doing what you expect by visualising the output.
@@ -195,4 +195,5 @@ You are finished with Session 2 if:
 - you committed and pushed your changes
 
 ---
+
 
