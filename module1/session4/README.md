@@ -101,6 +101,7 @@ Zotero is a tool for:
 Install:
 - the Zotero desktop application
 - the Zotero browser connector
+- e.g., https://www.zotero.org
 
 ---
 
@@ -177,5 +178,6 @@ You are finished with Session 4 if:
 "## Important note
 Understanding will develop over time.
 These papers will be revisited as your coding skills and modelling tools expand.
+
 
 
