@@ -7,19 +7,12 @@ By the end of this session you will be able to:
 - run one test script to confirm MATLAB works
 - save your changes back to GitHub (commit + push)
 
-You are **not** expected to understand programming yet. This is just setup.
-
 ---
 
 ## Part A — GitHub and getting this folder onto your computer
-
-### A1. Create a GitHub account (if you don’t have one)
-1. Go to GitHub and create an account.
-2. Tell me your GitHub username so you can be added as a collaborator.
-
 ---
 
-### A2. Install Git (only once)
+### A1. Install Git (only once)
 Git is a tool that lets your computer download (“clone”) the repository and send changes back (“push”).
 
 **macOS**
@@ -27,16 +20,17 @@ Git is a tool that lets your computer download (“clone”) the repository and 
   ```bash
   git --version
   ```
-If you see a version number, Git is installed.
+If you see a version number, Git is installed. If not, please install. 
 
 **Windows**
 Install Git from https://git-scm.com/downloads
 After installing, open Git Bash (it comes with Git).
 
-### A3. Download the repository (“clone”)
+### A2. Download the repository (“clone”)
 This creates a folder on your computer containing all the files from GitHub.
 Open Terminal (macOS) or Git Bash (Windows).
-Choose where you want the folder to live (e.g., Desktop or Documents) and naviagte there by using cd e.g., cd ~/Documents
+Choose where you want the folder to live (e.g., Desktop or Documents) and naviagte there by using cd e.g., cd ~/Documents.
+
 Now run:
 ```bash
 git clone https://github.com/liobaberndt/ucl-mres.git
@@ -48,40 +42,39 @@ ucl-mres
 ```
 Go into the folder:
 ``` bash
-cd ucl-mres
+cd ucl-mres/module1/session1
 ```
 
-### A4. Check you are in the right place
+### A3. Check you are in the right place
 Run:
 ``` bash
 ls
 ```
-You should see files and folders from the repository (for example README.md and session folders).
+You should see files from the repository (for example README.md).
 
 ## Part B - Install MATLAB and run a test script
-### B1. Install MATLAB
-Install MATLAB using UCL's license.
+### B1. Install MATLAB (if you haven't done so already)
+Install MATLAB using UCL's license: https://uk.mathworks.com/academia/tah-portal/university-college-london-649021.html
 
 ### B2. Open the repository folder in MATLAB (“Current Folder”)
 Open MATLAB. MATLAB always works inside one folder at a time. MATLAB calls this the Current Folder.
-In MATLAB, find the panel called Current Folder (usually on the left).
-Click Browse for Folder (or the “…” button).
-Select the ucl-mres folder you just cloned.
-Click Open.
-If this worked, you should see the repository files listed inside MATLAB.
+We want to set the current folder (called working directory). 
+You set it like this:
 
-
-### B3. Create and run a MATLAB test script
-Now we make a tiny script to verify MATLAB runs code correctly.
-Set your working directory (where your git is for example for me):
 ``` bash
 cd '/Users/liobaberndt/Library/CloudStorage/Dropbox/UCL/supervision/ucl-mres/module1/session1'
 ```
-In MATLAB, click New Script.
-Save it inside this repository folder as:
+
+but replace with your individual paths (you can find it in the terminal wehre you downloaded the fodler if you type in 
+
 ``` bash
-hello_matlab.m
+pwd
 ```
+
+### B3. Create and run a MATLAB test script
+Now we make a tiny script to verify MATLAB runs code correctly.
+
+In MATLAB, click New Script.
 
 Copy/paste the following:
 ``` bash
@@ -91,6 +84,11 @@ disp(['2 + 2 = ' num2str(a)]);
 ```
 
 Press the green Run button.
+When it asks you to save the script before running, please name it:
+``` bash
+hello_matlab.m
+```
+
 Look at the Command Window.
 You should see:
 ``` bash
@@ -100,11 +98,12 @@ You should see:
 
 ## Part C - Save your work back to GitHub (commit + push)
 ### C1. Check what changed
-Go back to Terminal/Git Bash (still inside the ucl-mres folder) and run:
+Go back to Terminal/Git Bash (still inside the ucl-mres/module1/session1 folder) and run:
 ``` bash
 git status
 ``` 
 You should see hello_matlab.m listed as a new file.
+
 ### C2. Commit the change
 A commit is a saved snapshot with a message.
 Run:
@@ -112,6 +111,7 @@ Run:
 git add hello_matlab.m
 git commit -m "Add MATLAB test script"
 ```
+
 ### C3. Push to GitHub
 This uploads your commits to GitHub.
 Run:
