@@ -70,8 +70,11 @@ Complete the TODOs to:
 You were introduced to the main paper in Session 3, where the focus was on:
 - the concept of Intrinsic EEG Activity (IEA)
 - the main findings and figures
+
 In this session, you will return to the same paper, but with a different goal.
+
 Your focus now is the Methods section.
+
 As you read, aim to understand:
 - how EEG data are structured and segmented
 - how spectral and IEA-related features are extracted
@@ -79,6 +82,7 @@ As you read, aim to understand:
 
 ### Part D - Writing: beginning the Methods section
 From this session onward, you should begin drafting a Methods section for your thesis.
+
 At this stage:
 - write at a high, descriptive level
 - focus on data types and overall analysis logic
@@ -88,7 +92,9 @@ At this stage:
 The long-term goal of this project is to:
 - replicate psychosis biotypes using the IEA framework
 - later provide mechanistic interpretation using computational models
+
 Dynamic Causal Modelling (DCM) will be introduced in later sessions.
+
 You do not need to write DCM-related methods yet.
 
 ### Session 7 checklist
@@ -98,4 +104,5 @@ You are finished with Session 7 if:
 - you can explain the difference between continuous and epoched data
 - you re-read the Methods section of the main paper with an EEG focus
 - you started a high-level draft of your Methods section
+
 
