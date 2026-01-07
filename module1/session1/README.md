@@ -16,7 +16,7 @@ By the end of this session you will be able to:
 Git is a tool that lets your computer download (“clone”) the repository and send changes back (“push”).
 
 **macOS**
-- Open the **Terminal** app and run:
+Open the **Terminal** app and run:
   ```bash
   git --version
   ```
@@ -24,6 +24,7 @@ If you see a version number, Git is installed. If not, please install.
 
 **Windows**
 Install Git from https://git-scm.com/downloads
+
 After installing, open Git Bash (it comes with Git).
 
 ### A2. Download the repository (“clone”)
@@ -65,7 +66,7 @@ You set it like this:
 cd '/Users/liobaberndt/Library/CloudStorage/Dropbox/UCL/supervision/ucl-mres/module1/session1'
 ```
 
-but replace with your individual paths (you can find it in the terminal wehre you downloaded the fodler if you type in 
+but replace with YOUR path (you can find it in the terminal where you downloaded the folder if you type in 
 
 ``` bash
 pwd
