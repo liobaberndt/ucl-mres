@@ -115,7 +115,7 @@ Use:
 Add the following email address as a co-author:
 - lioba.berndt@gmail.com
 
-This way I can directly comment on your thesis/make chnages in real-time
+This way I can directly comment on your thesis/make changes in real-time
 
 ---
 
@@ -152,6 +152,7 @@ You are finished with Session 5 if:
 - you wrote initial background text using LaTeX formatting
 
 ---
+
 
 
 
