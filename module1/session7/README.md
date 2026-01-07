@@ -43,6 +43,7 @@ Open and run:
 This script demonstrates:
 - how EEG data are represented as multi-dimensional arrays
 - the meaning of each dimension (channels, time, trials)
+
 Focus on:
 - how array dimensions map onto experimental concepts
 - how EEG data are indexed in practice
@@ -97,3 +98,4 @@ You are finished with Session 7 if:
 - you can explain the difference between continuous and epoched data
 - you re-read the Methods section of the main paper with an EEG focus
 - you started a high-level draft of your Methods section
+
