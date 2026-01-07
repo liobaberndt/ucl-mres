@@ -137,7 +137,7 @@ You can find the appropirate LaTex commands online or ask ChatGPT
 
 ## Part F - Writing: background and interpretation
 
-I think it makes sense start writing ypoutr thesis as early as possible. 
+I think it makes sense start writing your thesis as early as possible. 
 So start adding some bullet-points/sentences to your background section + think how you want to structure your background.
 The papers in session 4 should give a good starting point (e.g., what is psychosis, biotypes, EEG, resting-state EEG, DCM etc.)
 
@@ -152,6 +152,7 @@ You are finished with Session 5 if:
 - you wrote initial background text using LaTeX formatting
 
 ---
+
 
 
 
