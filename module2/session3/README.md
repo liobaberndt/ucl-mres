@@ -57,8 +57,8 @@ Read briefly about:
 - how MARA (or similar classifiers) decide what is artifact
 
 Suggested sources:
-- EEGLAB ICA tutorial
-- MARA paper or documentation
+https://eeglab.org/tutorials/06_RejectArtifacts/RunICA.html
+https://iopscience.iop.org/article/10.1088/1741-2560/11/3/035013
 
 Write 3–5 bullet notes:
 - why ICA is used before interpolation/rereferencing
@@ -77,3 +77,4 @@ You are finished with Session 3 if:
 - you saw the MARA rejection summary plot
 - the *fe_rej_ica_MARA.set dataset is saved
 - you added ICA + MARA to Overleaf
+
