@@ -10,11 +10,11 @@
 % - answer the interpretation questions (in comments)
 
 % TODO: set sampling rate and duration
-fs = ;
-duration = ;
+fs = 250;
+duration = 5;
 
 % TODO: create time vector
-t = ;
+t = 0:1/fs:duration;
 
 % Frequencies (Hz) - you can keep these fixed
 f_theta = 6;
@@ -25,25 +25,27 @@ f_beta  = 20;
 % Try at least two different settings by changing these and re-running:
 % Example setting 1: alpha dominant (a_alpha largest)
 % Example setting 2: theta dominant (a_theta largest)
-a_theta = ;
-a_alpha = ;
-a_beta  = ;
+a_theta = 0.9;
+a_alpha = 0.1;
+a_beta  = 0.9;
 
 % TODO: create clean multi-frequency signal
-y_clean = ;
+y_clean = a_theta*sin(2*pi*f_theta*t) + ...
+          a_alpha*sin(2*pi*f_alpha*t) + ...
+          a_beta*sin(2*pi*f_beta*t);
 
 % TODO: add noise
-noise_strength = ;
-y = ;
+noise_strength = 0.6;
+y = y_clean + noise_strength*randn(size(t));
 
 % TODO: compute FFT-based power spectrum
-N = ;
-Y = ;
-f = ;
-P = ;
+N = length(y);
+Y = fft(y);
+f = (0:N-1) * (fs/N);
+P = abs(Y).^2;
 
 % TODO: plot spectrum up to Nyquist
-halfN = ;
+halfN = floor(N/2) + 1;
 
 figure;
 
