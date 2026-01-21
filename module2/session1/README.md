@@ -32,7 +32,7 @@ You need to know where these are installed:
 - the teaching scripts folder (this repo)
 
 ### A2. Confirm teaching_setup.m settings
-Open teaching_setup.m and make sure:
+Open teaching_setup.m and set your paths!!!:
 - cfg.eeglab_path points to EEGLAB
 - cfg.spm_path points to SPM12
 - cfg.script_path points to this repo
@@ -43,7 +43,8 @@ Run teaching_setup.m once to confirm it loads without errors.
 
 ## Part B - Ask me for the eeeg helper functions
 
-## Part C - Run the first teaching script
+## Part C - Run the first teaching script (+ try to understand what we are doing here at a high level - don't get lost in code details!!)
+
 ### C1. Start with Step 1
 Run:
 ```bash
@@ -68,12 +69,12 @@ Why we do it:
 - allows artifact rejection at the trial level
 - prepares data for later analyses (ICA, averaging, time‑frequency)
 
-Suggested short reading:
-- EEGLAB tutorial section on epoching
-- Any methods section from a resting‑state EEG paper (focus on “epochs” and “artifact rejection”)
+Suggested reading:
+https://pubmed.ncbi.nlm.nih.gov/25128257/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12586465/?utm_source=chatgpt.com
 
 Write 3–5 bullet notes:
-- how long the epochs are
+- how long the epochs are (clue: teaching_setup.m has the asnwers)
 - why that length was chosen
 - how artifact rejection is described
 
@@ -82,10 +83,6 @@ This pipeline starts from filtered data (*_f.set).
 Filtering was done previously to remove:
 - slow drifts (high‑pass)
 - line noise and high‑frequency noise (low‑pass)
-
-At this stage:
-- you do not re‑filter
-- you only load the filtered set and proceed with epoching
 
 ## Part F - Write Methods text in Overleaf
 Add a preprocessing subsection in your Overleaf Methods section.
@@ -103,3 +100,4 @@ You are finished with Session 1 if:
 - you saw the PSD plot
 - you wrote notes on what epoching is and why it matters
 - you wrote the preprocessing steps in Overleaf
+
