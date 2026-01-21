@@ -1,6 +1,5 @@
 # Session 1 - Setting Up the EEG Teaching Pipeline
-A general comment: this might all seem overwhelming. I tried to break down major pre-rpocessing steps into different scripts and please try to understand at each step what we are doing (e.g., filtering) and why we are doing this. When writing your methods section you do not need to explain each step in detail but mention that we did this and name things we set (e.g., value of the low pass filter we set). Some of these numbers we will have to change because of the new pre-processing pipeline but don't worry about that for now. Let me know if this seems too overwhelming to do by yourself and we can walk through thsi and/or let ChatGPT explain it to you. 
-The code runs on my laptop but you will have to change some things to make it work on yours. This will be the first time that you'll ahve to debug which is what we actually do most of the time and is very normal. Don't feel disencouraged if it doesn't run immediatly because for example the script can't find a function because it is in a differnt loaction than you expect. Also, I need to send you a folder with customised functions because the scripts call them. 
+General note: This may feel like a lot at first. The goal is not to understand every line of code, but to understand the big steps (e.g., filtering, epoching) and why we do them. You’ll need to adjust file paths so the scripts run on your laptop - debugging missing paths/functions is normal and part of the process. If anything feels too much, we can walk through it together. I will send you a folder called functions/. Copy it into the repo.
 
 ## What you will learn in this session
 In this session you will:
@@ -34,7 +33,7 @@ You need to know where these are installed:
 - the teaching scripts folder (this repo)
 
 ### A2. Confirm teaching_setup.m settings
-Open teaching_setup.m and set your paths!!! + which paths to use so number 6:
+Open teaching_setup.m and set your paths (you'll see in the script where and currently it's set to use mine number 5; you need to replace 5 with any number >5).
 - cfg.eeglab_path points to EEGLAB
 - cfg.spm_path points to SPM12
 - cfg.script_path points to this repo
@@ -101,6 +100,7 @@ You are finished with Session 1 if:
 - you saw the PSD plot
 - you wrote notes on what epoching is and why it matters
 - you wrote the preprocessing steps in Overleaf
+
 
 
 
