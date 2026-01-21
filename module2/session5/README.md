@@ -51,10 +51,10 @@ Check that:
 Read briefly about:
 - why SPM is used in EEG/MEG analysis pipelines
 - what advantages SPM provides for model‑based or spectral analyses
+  - we will use SPM for our DCM afterwards
 
 Suggested sources:
-- SPM12 EEG documentation (overview)
-- a paper using SPM for EEG preprocessing or analysis
+https://www.fil.ion.ucl.ac.uk/spm/docs/manual/meeg/eeg_overview/
 
 Write 2–4 bullet notes:
 - what SPM is used for in this project
@@ -69,3 +69,4 @@ You are finished with Session 5 if:
 - teaching_step7_spm_convert.m runs successfully
 - the SPM file exists in your output directory
 - you added the conversion step to Overleaf
+
