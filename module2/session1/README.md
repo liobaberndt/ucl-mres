@@ -1,4 +1,6 @@
 # Session 1 - Setting Up the EEG Teaching Pipeline
+A general comment: this might all seem overwhelming. I tried to break down major pre-rpocessing steps into different scripts and please try to understand at each step what we are doing (e.g., filtering) and why we are doing this. When writing your methods section you do not need to explain each step in detail but mention that we did this and name things we set (e.g., value of the low pass filter we set). Some of these numbers we will have to change because of the new pre-processing pipeline but don't worry about that for now. Let me know if this seems too overwhelming to do by yourself and we can walk through thsi and/or let ChatGPT explain it to you. 
+The code runs on my laptop but you will have to change some things to make it work on yours. This will be the first time that you'll ahve to debug which is what we actually do most of the time and is very normal. Don't feel disencouraged if it doesn't run immediatly because for example the script can't find a function because it is in a differnt loaction than you expect. Also, I need to send you a folder with customised functions because the scripts call them. 
 
 ## What you will learn in this session
 In this session you will:
@@ -32,7 +34,7 @@ You need to know where these are installed:
 - the teaching scripts folder (this repo)
 
 ### A2. Confirm teaching_setup.m settings
-Open teaching_setup.m and set your paths!!!:
+Open teaching_setup.m and set your paths!!! + which paths to use so number 6:
 - cfg.eeglab_path points to EEGLAB
 - cfg.spm_path points to SPM12
 - cfg.script_path points to this repo
@@ -99,5 +101,6 @@ You are finished with Session 1 if:
 - you saw the PSD plot
 - you wrote notes on what epoching is and why it matters
 - you wrote the preprocessing steps in Overleaf
+
 
 
