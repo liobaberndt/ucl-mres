@@ -9,36 +9,36 @@
 % - compare spectra visually (subplots or overlaid)
 
 % TODO: define sampling rate and duration
-fs = ;
-duration = ;
+fs = 250;
+duration = 1;
 
 % TODO: create time vector
-t = ;
+t = 0:1/fs:duration;
 
 % TODO: choose frequency and amplitude
-frequency = ;
-amplitude = ;
+frequency = 10;
+amplitude = 1;
 
 % TODO: create clean signal
-y_clean = ;
+y_clean = amplitude*sin(2*pi*frequency*t);
 
 % TODO: choose noise strength
-noise_strength = ;
+noise_strength = 0.5;
 
 % TODO: create noisy versions (at least 3)
-y_noisy_1 = ;
-y_noisy_2 = ;
-y_noisy_3 = ;
+y_noisy_1 = y_clean + noise_strength*randn(size(y_clean));
+y_noisy_2 = y_clean + noise_strength*randn(size(y_clean));
+y_noisy_3 = y_clean + noise_strength*randn(size(y_clean));
 
 % TODO: FFT and frequency axis
-N = ;
-f = ;
-halfN = ;
+N = length(y_clean);
+f = (0:N-1) * (fs/N);
+halfN = floor(N/2) + 1;
 
 % TODO: compute spectra (power) for each noisy signal
-P1 = ;
-P2 = ;
-P3 = ;
+P1 = abs(fft(y_noisy_1)).^2;
+P2 = abs(fft(y_noisy_2)).^2;
+P3 = abs(fft(y_noisy_3)).^2;
 
 % TODO: plot spectra for comparison (overlaid is fine)
 figure;

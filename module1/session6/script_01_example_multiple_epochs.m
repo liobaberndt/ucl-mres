@@ -44,7 +44,7 @@ for e = 1:n_epochs
 end
 
 %% Plot a few time-domain epochs
-n_show = 5;
+n_show = 2;
 
 figure('Name','Session 6: multiple epochs (time domain)');
 plot(t, epochs(1:n_show,:).');
@@ -55,8 +55,8 @@ grid on;
 
 %% Compute and plot spectra (single-sided amplitude spectrum)
 % Use a Hann window to reduce spectral leakage
-w = hann(N).';
-W = sum(w.^2);  % for power normalization
+n = 0:N-1;
+w = 0.5 * (1 - cos(2*pi*n/(N-1)));W = sum(w.^2);  % for power normalization
 
 freq = (0:floor(N/2)) * (fs/N);
 amp_specs = zeros(n_epochs, numel(freq));
