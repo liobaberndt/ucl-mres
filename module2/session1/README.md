@@ -1,5 +1,5 @@
 # Session 1 - Setting Up the EEG Teaching Pipeline
-General note: This may feel like a lot at first. The goal is not to understand every line of code, but to understand the big steps (e.g., filtering, epoching) and why we do them. You’ll need to adjust file paths so the scripts run on your laptop - debugging missing paths/functions is normal and part of the process. If anything feels too much, we can walk through it together. I will send you a folder called functions/. Copy it into the repo.
+General note: This may feel like a lot at first. The goal is not to understand every line of code, but to understand the big steps (e.g., filtering, epoching) and why we do them. You’ll need to adjust file paths so the scripts run on your laptop - debugging missing paths/functions is normal and part of the process. If anything feels too much, we can walk through it together. I will send you a folder called EEG_Code/. Copy it into the eeglab folder you have when you downloaded eeglab.
 
 ## What you will learn in this session
 In this session you will:
@@ -100,6 +100,7 @@ You are finished with Session 1 if:
 - you saw the PSD plot
 - you wrote notes on what epoching is and why it matters
 - you wrote the preprocessing steps in Overleaf
+
 
 
 
