@@ -60,8 +60,7 @@ Read briefly about:
 - why average reference is used in EEG
 
 Suggested sources:
-- EEGLAB tutorial on channel interpolation
-- an EEG preprocessing methods section (focus on referencing)
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4471356/?utm_source=chatgpt.com (in general to give you an overview of pre-processing but also explains channel interpolation and referencing)
 
 Write 3–5 bullet notes:
 - when interpolation is appropriate
@@ -79,3 +78,4 @@ You are finished with Session 4 if:
 - teaching_step6_reref.m runs successfully
 - you saw the interpolation and reref plots
 - you added interpolation + rereferencing to Overleaf
+
