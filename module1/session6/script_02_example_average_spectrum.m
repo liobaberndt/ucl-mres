@@ -40,7 +40,8 @@ for e = 1:n_epochs
 end
 
 %% Compute amplitude spectra (single-sided) with Hann window
-w = hann(N).';
+n = 0:N-1;
+w = 0.5 * (1 - cos(2*pi*n/(N-1)));
 freq = (0:floor(N/2)) * (fs/N);
 A_all = zeros(n_epochs, numel(freq));
 
