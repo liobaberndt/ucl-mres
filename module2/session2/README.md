@@ -65,8 +65,7 @@ Read briefly about:
 - common criteria for rejecting channels (noise, variance, spectral outliers)
 
 Suggested sources:
-- EEGLAB tutorial sections on artifact rejection
-- a resting‑state EEG methods paper (focus on “artifact rejection” and “bad channels”)
+https://eeglab.org/tutorials/ (artifact rejection)
 
 Write 3–5 bullet notes:
 - which rejection methods are used
@@ -85,3 +84,4 @@ You are finished with Session 2 if:
 - teaching_step3_channel_reject.m runs successfully
 - you saw the rejection plots
 - you added the epoch + channel rejection steps to Overleaf
+
