@@ -70,8 +70,7 @@ Why we do it:
 - prepares data for later analyses (ICA, averaging, time‑frequency)
 
 Suggested reading:
-https://pubmed.ncbi.nlm.nih.gov/25128257/
-https://pmc.ncbi.nlm.nih.gov/articles/PMC12586465/?utm_source=chatgpt.com
+https://eeglab.org/tutorials/ (here filtering and epoching)
 
 Write 3–5 bullet notes:
 - how long the epochs are (clue: teaching_setup.m has the asnwers)
@@ -100,4 +99,5 @@ You are finished with Session 1 if:
 - you saw the PSD plot
 - you wrote notes on what epoching is and why it matters
 - you wrote the preprocessing steps in Overleaf
+
 
