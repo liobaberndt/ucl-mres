@@ -60,7 +60,7 @@ function cfg = teaching_setup()
         cfg.data_path   = '/Users/sachapopa/Documents/ucl-mres/module2/';
         cfg.analys_path = '/Users/sachapopa/Documents/ucl-mres/module2/processed/';
         cfg.spm_path    = '/Users/sachapopa/Documents/5 archive/Software/spm/';
-        cfg.eeglab_path = '/Users/sachapopa/Documents/5 archive/Software/eeglab2025.1.0/';
+        cfg.eeglab_path = '/Users/sachapopa/Documents/5 archive/Software/eeglab2025.1.0/EEG_Code';
     else
         cfg.script_path = '';
         cfg.data_path   = '';
