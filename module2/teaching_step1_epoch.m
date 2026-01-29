@@ -12,7 +12,85 @@ for s = 1:length(cfg.subj)
             fprintf('Skipping (missing): %s\n', input_set);
             continue;
         end
-        EEG = pop_loadset(input_set);
+        try
+            EEG = pop_loadset(input_set);
+        catch ME
+            % Common teaching-repo issue: .set references an external .fdt that
+            % wasn't distributed via git/LFS. Fall back to importing raw .cnt
+            % and saving a single-file .set at the expected path.
+            fdt_path = strrep(input_set, '.set', '.fdt');
+            if contains(ME.message, '.fdt') || exist(fdt_path, 'file') ~= 2
+                fprintf('Missing associated .fdt for %s\n', input_set);
+                fprintf('Falling back to importing raw .cnt and saving single-file .set...\n');
+
+                cnt_candidates = dir(fullfile(cfg.data_path, subj_id, '*.cnt'));
+                if isempty(cnt_candidates)
+                    error('Cannot find CNT file to import. Original error: %s', ME.message);
+                end
+                cnt_file = fullfile(cnt_candidates(1).folder, cnt_candidates(1).name);
+
+                % Try multiple methods to load CNT file
+                EEG = [];
+                
+                % Method 1: Try pop_loadcnt if available (may require plugin)
+                try
+                    if exist('pop_loadcnt', 'file') == 2
+                        fprintf('Attempting to load CNT via pop_loadcnt...\n');
+                        EEG = pop_loadcnt(cnt_file);
+                        fprintf('Successfully loaded CNT via pop_loadcnt.\n');
+                    end
+                catch
+                    fprintf('pop_loadcnt not available or failed.\n');
+                end
+                
+                % Method 2: Try loading .set metadata and workaround
+                if isempty(EEG)
+                    try
+                        fprintf('Loading .set file metadata (without data)...\n');
+                        % Load .set file structure - this will fail on data loading
+                        % but we can catch that and work with metadata
+                        tmp = load(input_set, '-mat');
+                        if isfield(tmp, 'EEG')
+                            EEG_meta = tmp.EEG;
+                            fprintf('Loaded metadata. Note: This .set file expects external .fdt file.\n');
+                            fprintf('The CNT file (%s) needs to be converted to .set format.\n', cnt_file);
+                            fprintf('Please use MATLAB EEGLAB GUI: File > Import data > Using EEGLAB functions and file formats\n');
+                            fprintf('Or install EEGLAB File-IO plugin for CNT support.\n');
+                            error(['Cannot automatically import CNT. Please manually convert %s to .set format ', ...
+                                   'using EEGLAB GUI, then rerun this script.'], cnt_file);
+                        end
+                    catch metaErr
+                        if contains(metaErr.message, 'Cannot automatically import')
+                            rethrow(metaErr);
+                        end
+                        fprintf('Metadata loading also failed.\n');
+                    end
+                end
+                
+                if isempty(EEG)
+                    fprintf('\n=== IMPORTANT: CNT to SET conversion needed ===\n');
+                    fprintf('Run this helper script first:\n');
+                    fprintf('  >> convert_cnt_to_set\n\n');
+                    fprintf('Or manually convert using EEGLAB GUI:\n');
+                    fprintf('  File > Import data > Using EEGLAB functions\n');
+                    fprintf('  Select: %s\n', cnt_file);
+                    fprintf('  Save as single-file .set format\n\n');
+                    error(['Cannot import CNT automatically. ', ...
+                           'Please run convert_cnt_to_set.m first, or convert manually. ', ...
+                           'Original error: %s'], ME.message);
+                end
+                
+                % Save as single-file .set (no .fdt needed)
+                fprintf('Saving imported data as single-file .set...\n');
+                pop_saveset(EEG, 'filename', [base_name '_f.set'], ...
+                    'filepath', fullfile(cfg.data_path, subj_id), ...
+                    'savemode', 'onefile');
+                fprintf('Saved single-file .set. Reloading...\n');
+                EEG = pop_loadset(input_set);
+            else
+                rethrow(ME);
+            end
+        end
         if cfg.plot_PSDs == 1
             EEG_plot = pop_select(EEG, 'channel', 1:EEG.nbchan);
             figure('Position', get(0, 'Screensize'));
