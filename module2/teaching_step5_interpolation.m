@@ -24,6 +24,8 @@ for s = 1:length(cfg.subj)
         end
         EEG_ref = pop_loadset(ref_set);
         [EEG_ref, ~] = drop_non_eeg_channels(EEG_ref, cfg.discard_m1_m2);
+
+
         if cfg.teach_plots == 1
             ref_labels = {EEG_ref.chanlocs.labels};
             cur_labels = {EEG.chanlocs.labels};
@@ -40,7 +42,7 @@ for s = 1:length(cfg.subj)
 
         out_dir = fullfile(cfg.analys_path, subj_id);
         if ~exist(out_dir, 'dir'); mkdir(out_dir); end
-        pop_saveset(EEG_interp, [EEG_interp.setname '.set'], out_dir);
+        pop_saveset(EEG_interp, 'filename', [EEG_interp.setname '.set'], 'filepath', out_dir);
         fprintf('Saved %s\n', fullfile(out_dir, [EEG_interp.setname '.set']));
     end
 end
