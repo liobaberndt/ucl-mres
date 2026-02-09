@@ -172,3 +172,7 @@ You are finished if:
 - you exported a NIfTI file
 - you completed the writing task
 
+## What comes next
+- Next module will be an introduction to DCM
+- Let's talk about module 3 and try to decide on some settings
+- After module 4 we are going to start writing the pre-registration
