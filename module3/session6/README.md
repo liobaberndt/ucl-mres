@@ -23,8 +23,6 @@ git push
 ## Part A - Source Reconstruction
 Adjust teh script to wpkr for resting state data 
 ```bash
-matlab
-
 % -------------------------------------------------------------------------
 % Script: SPM 
 % Dataset: NAPLS
@@ -158,7 +156,7 @@ matlab
 %         end 
 %      end
 %  end
-```bash
+```
 
 ## Part B - Writing task (short)
 Write 6–10 bullets:
@@ -173,3 +171,4 @@ You are finished if:
 - you computed a source power image
 - you exported a NIfTI file
 - you completed the writing task
+
