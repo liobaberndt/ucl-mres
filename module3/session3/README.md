@@ -8,6 +8,19 @@ In this session you will:
 
 This session includes coding and a short writing reflection.
 
+## Part 0 - Git workflow
+Before starting:
+```bash
+git pull
+```
+
+After completing:
+```bash
+git add .
+git commit -m "Module 3 Session 3: ROI vs global PSD"
+git push
+```
+
 ## Part A - Compute ROI and global PSD
 Create a new file:
 ```
@@ -118,22 +131,10 @@ Write a short note (12–18 bullets) that can go into a preregistration:
 - one advantage and one disadvantage of each approach considered
 - your final choice(s) for preregistration and the rationale
 
-## Part 0 — Git workflow
-Before starting:
-```bash
-git pull
-```
-
-After completing:
-```bash
-git add .
-git commit -m "Module 3 Session 3: ROI vs global PSD"
-git push
-```
-
 ## Session 3 checklist
 You are finished if:
 - the script runs without errors
 - you created the ROI vs global PSD plot
 - you saved `module3_session3_psd_roi.mat`
 - you completed the writing task
+
