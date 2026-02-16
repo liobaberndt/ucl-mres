@@ -12,6 +12,7 @@ for s = 1:length(cfg.subj)
             fprintf('Skipping (missing): %s\n', input_set);
             continue;
         end
+<<<<<<< HEAD
         try
             EEG = pop_loadset(input_set);
         catch ME
@@ -91,6 +92,9 @@ for s = 1:length(cfg.subj)
                 rethrow(ME);
             end
         end
+=======
+        EEG = pop_loadset(input_set);
+>>>>>>> d1903f377bfa0b8abd5ae2cc0133089dc0e77b41
         if cfg.plot_PSDs == 1
             EEG_plot = pop_select(EEG, 'channel', 1:EEG.nbchan);
             figure('Position', get(0, 'Screensize'));

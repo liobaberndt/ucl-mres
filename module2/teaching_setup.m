@@ -2,7 +2,11 @@ function cfg = teaching_setup()
 % Shared setup for teaching scripts (paths, parameters, subjects).
 
     % Parameters (keep in sync with main script)
+<<<<<<< HEAD
     cfg.computer = 6;
+=======
+    cfg.computer = 5;
+>>>>>>> d1903f377bfa0b8abd5ae2cc0133089dc0e77b41
     cfg.fname_ltrs = 4;
     cfg.load_runs = 1;
     cfg.plot_PSDs = 1;
@@ -55,12 +59,15 @@ function cfg = teaching_setup()
         cfg.analys_path = '/Users/liobaberndt/Library/CloudStorage/Dropbox/UCL/0001/0001_032508_RestEyesOpen_RS_1/processed/';
         cfg.spm_path    = '/Users/liobaberndt/Desktop/spm_materials/';
         cfg.eeglab_path = '/Users/liobaberndt/Desktop/eeglab2023.0/';
+<<<<<<< HEAD
     elseif cfg.computer == 6
         cfg.script_path = '/Users/sachapopa/Documents/ucl-mres/module2/';
         cfg.data_path   = '/Users/sachapopa/Documents/ucl-mres/module2/';
         cfg.analys_path = '/Users/sachapopa/Documents/ucl-mres/module2/processed/';
         cfg.spm_path    = '/Users/sachapopa/Documents/5 archive/Software/spm/';
         cfg.eeglab_path = '/Users/sachapopa/Documents/5 archive/Software/eeglab2025.1.0/EEG_Code';
+=======
+>>>>>>> d1903f377bfa0b8abd5ae2cc0133089dc0e77b41
     else
         cfg.script_path = '';
         cfg.data_path   = '';
