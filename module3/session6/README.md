@@ -21,7 +21,7 @@ git push
 ```
 
 ## Part A - Source Reconstruction
-Adjust teh script to wpkr for resting state data 
+Adjust the script to work for resting state data.
 ```bash
 % -------------------------------------------------------------------------
 % Script: SPM 
@@ -176,3 +176,4 @@ You are finished if:
 - Next module will be an introduction to DCM
 - Let's talk about module 3 and try to decide on some settings
 - After module 4 we are going to start writing the pre-registration
+
