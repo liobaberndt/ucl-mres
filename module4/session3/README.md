@@ -1,11 +1,11 @@
-# Session 3: One Subject — Decide Settings, Adjust Code, Run, Check Model Fit
+# Session 3: One Subject - Decide Settings, Adjust Code, Run, Check Model Fit
 
 ## What you will learn in this session
 
 In this session you will:
 
 - **decide on settings** for the DCM (data, sources, design, PSD options, priors) before running
-- **adjust the dcm_ei code** (or calling scripts) so it runs on **one subject** from your dataset, using **data from Module 3** (the SPM-processed data produced there)
+- **adjust the dcm_ei code** so it runs on **one subject** from your dataset, using **data from Module 3** (the SPM-processed data produced there)
 - **run** the full pipeline for that subject (specify → invert)
 - **inspect model fit** (e.g. predicted vs observed spectra, residuals)
 - write the **Methods** for this one-subject analysis in **Overleaf** (thesis)
@@ -32,21 +32,20 @@ git push
 
 ---
 
-## Part A – Decide settings before running
+## Part A - Decide settings before running
 
 Before you run anything, document (in a short checklist or script header) your choices for:
 
 ### A1. Data
 
 - **Input data**: Use the **data from Module 3** (the SPM files and associated data you produced there). Which **one subject** (ID/code) and which **SPM file** (path, e.g. `spmeeg_*_*.mat`) from the Module 3 output.
-- **Sensors / channels**: Which sensor-level data to use—e.g. **all sensors**, **specific channels** (list or mask), or **averaged** over a subset (e.g. frontal, or ROI-based). This should match your preprocessing and what you plan to pre-register (e.g. “we use the average over channels X, Y, Z” or “we use all EEG channels”).
+- **Sensors / channels**: Which sensor-level data to use e.g. **all sensors**, **specific channels** (list or mask), or **averaged** over a subset (e.g. frontal, or ROI-based). This should match your preprocessing and what you plan to pre-register (e.g. “we use the average over channels X, Y, Z” or “we use all EEG channels”).
 - Epoch/trial structure or continuous segment used for PSD (e.g. time window, conditions).
 
 ### A2. Model specification
 
-- **Sources / nodes**: The E/I model does **not** fix the number of sources—the preprint uses e.g. 6 regions for some paradigms, but **we choose sources based on our source reconstruction** (or theoretical/paradigm-based choice). You might use **1 source**, or 4, or 6, etc., depending on what your source reconstruction supports and what you want to test. Decide: which regions (coordinates or labels), and **how many** (e.g. single source vs multi-region network). Document this clearly for the pre-registration.
-- **Design**: Which conditions or trial types, and where the driving input **u** enters (which source(s)).
-- **E/I parameters**: Using the dcm_ei implementation; confirm g_ee and g_ii are in the model (default or as in the preprint).
+- **Sources / nodes**: The E/I model does **not** fix the number of sources. **we choose sources based on our source reconstruction** (or theoretical/paradigm-based choice). You might use **1 source**, or 4, or 6, etc., depending on what your source reconstruction supports and what you want to test. Decide: which regions (coordinates or labels), and **how many** (e.g. single source vs multi-region network). Document this clearly for the pre-registration.
+- **Design**: Which conditions or trial types
 
 ### A3. Inversion / PSD
 
@@ -57,7 +56,7 @@ Keep this list; you will reuse it in the pre-registration (Session 5–6).
 
 ---
 
-## Part B – Adjust code and run for one subject
+## Part B - Adjust code and run for one subject
 
 ### B1. Set paths and subject
 
@@ -77,17 +76,16 @@ Keep this list; you will reuse it in the pre-registration (Session 5–6).
 
 ---
 
-## Part C – Inspect model fit for this one subject
+## Part C - Inspect model fit for this one subject
 
 - **Predicted vs observed**: Plot or inspect predicted spectra (and/or time series if relevant) vs observed data (e.g. at channel or source level as in dcm_ei/SPM).
-- **Residuals**: If available, look at residuals (observed minus predicted).
 - **Qualitative check**: Does the model capture the main features of the data (e.g. peaks, frequency range)? Note any limitations in your Overleaf Methods.
 
-Use SPM/dcm_ei plotting utilities or write a short script (e.g. in MATLAB) that loads the estimated DCM and produces one or two summary figures. You can keep the script in this repo or in a private folder; document in Overleaf what was done.
+Use SPM/dcm_ei plotting utilities or write a short script that loads the estimated DCM and produces one or two summary figures. You can keep the script in this repo; document in Overleaf what was done.
 
 ---
 
-## Part D – Writing in Overleaf (thesis)
+## Part D - Writing in Overleaf (thesis)
 
 In your **Overleaf thesis project**, add to the **Methods**:
 
@@ -108,3 +106,4 @@ You are finished if:
 - you have inspected model fit (predicted vs observed, and optionally residuals) and noted the outcome
 - you have added the one-subject DCM Methods to Overleaf (thesis)
 - you have committed and pushed any scripts or notes to the repo
+
