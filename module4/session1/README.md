@@ -1,4 +1,4 @@
-# Session 1: Reading DCM and E/I DCM — Writing High-Level What DCM Is and Why E/I
+# Session 1: Reading DCM and E/I DCM - Writing High-Level What DCM Is and Why E/I
 
 ## What you will learn in this session
 
@@ -29,7 +29,7 @@ git push
 
 ---
 
-## Part A – Reading: DCM and E/I DCM
+## Part A - Reading: DCM and E/I DCM
 
 ### A1. Core reading
 
@@ -48,7 +48,7 @@ git push
 
 ---
 
-## Part B – Writing in Overleaf (thesis project)
+## Part B - Writing in Overleaf (thesis project)
 
 In your **existing Overleaf thesis project**, add a subsection (or notes section) that includes:
 
@@ -77,3 +77,4 @@ You are finished if:
 - you have read the Hauke et al. preprint (Introduction, Methods on E/I) and at least one general DCM for M/EEG reference
 - you have written in Overleaf (thesis): what DCM is (high-level), why we use the E/I model, and the hypothesis regarding BSNIP biotypes
 - you have committed and pushed any local notes/code changes to the repo
+
