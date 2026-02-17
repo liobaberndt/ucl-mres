@@ -1,4 +1,4 @@
-# Session 2: In-Depth DCM — Key Equations and the dcm_ei Code
+# Session 2: In-Depth DCM - Key Equations and the dcm_ei Code
 
 ## What you will learn in this session
 
@@ -30,7 +30,7 @@ git push
 
 ---
 
-## Part A – Key equations (to understand and write up)
+## Part A - Key equations (to understand and write up)
 
 You will be given the key equations below. Your task is to (1) understand what each term means and (2) find where they appear (or are implemented) in the dcm_ei code.
 
@@ -58,14 +58,14 @@ The observer equation maps hidden states to the observed signal:
 
 In the Hauke et al. model:
 
-- **g_ee**: self-connection on superficial pyramidal (E) cells → models **excitability of pyramidal cells**
-- **g_ii**: self-connection on inhibitory interneurons (I) → models **excitability of inhibitory cells**
+- **g_ee**: self-connection on superficial pyramidal (E) cells
+- **g_ii**: self-connection on inhibitory interneurons (I)
 
 These are parameterised as (inhibitory) self-connections; increasing g_ee corresponds to *reduced* pyramidal excitability. See the preprint Methods for the full system of equations (SP, SS, II, DP).
 
 ---
 
-## Part B – Download dcm_ei and find the equations in the code
+## Part B - Download dcm_ei and find the equations in the code
 
 ### B1. Clone the repository
 
@@ -83,19 +83,18 @@ Using the equation descriptions above and the Hauke et al. Methods:
 
 1. **State equation / dynamics**: Search the repo for where the differential equations for the neuronal populations (SP, SS, II, DP) are defined or integrated. Look for function names or files related to “dynamics”, “dx”, “integration”, or the canonical microcircuit.
 2. **Observer / observation function**: Find where the hidden states are mapped to the observed signal (e.g. lead field, which populations contribute to M/EEG).
-3. **E/I parameters (g_ee, g_ii)**: Find where g_ee and g_ii (or their equivalents) are set as parameters or priors (e.g. in a config, prior struct, or model definition).
+3. **E/I parameters (g_ee, g_ii)**: Find where g_ee and g_ii are set as parameters or priors (e.g. in a config, prior struct, or model definition).
 
-Make short notes (or comments in a local file) listing **file names and section/function names** where you found each of these. You will use this when adjusting the code for your one subject in Session 3.
+Make short notes listing **file names and section/function names** where you found each of these. You will use this when adjusting the code for your one subject in Session 3.
 
 ---
 
-## Part C – Writing in Overleaf (thesis)
+## Part C - Writing in Overleaf (thesis)
 
 In your **Overleaf thesis project**:
 
 1. Add a subsection that writes out the **state equation** and **observer equation** (as above) and defines each variable (x, u, θ, y, g, ε).
 2. Add 2–3 sentences on how **g_ee** and **g_ii** enter the canonical microcircuit and what they represent biologically.
-3. Optionally: one short paragraph on where in the dcm_ei code these are implemented (file/function names); this can go in a “Methods” or “Implementation” note.
 
 ---
 
@@ -107,3 +106,4 @@ You are finished if:
 - you have found in the code: (1) where the state/dynamics are implemented, (2) where the observation mapping is, (3) where g_ee / g_ii (or E/I parameters) appear
 - you have written in Overleaf the key equations and variable definitions, and how g_ee/g_ii fit in
 - you have committed and pushed any local notes or paths to the repo
+
