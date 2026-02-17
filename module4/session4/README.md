@@ -1,4 +1,4 @@
-# Session 4: PEB — What It Is, Why We Use It, Key Equations, PEB vs GLM
+# Session 4: PEB - What It Is, Why We Use It, Key Equations, PEB vs GLM
 
 ## What you will learn in this session
 
@@ -7,7 +7,6 @@ In this session you will:
 - **read** about Parametric Empirical Bayes (PEB) in the context of DCM (SPM)
 - understand **what PEB is** and **why we use it** for group-level DCM
 - learn the **key equations** for PEB (or the main idea: empirical priors from the group, second-level estimation)
-- **write in Overleaf** (thesis): why PEB is used and why it is **better than a simple GLM** for group DCM
 - *Not* run PEB in this module; that happens after pre-registration
 
 ---
@@ -30,7 +29,7 @@ git push
 
 ---
 
-## Part A – Reading: What is PEB?
+## Part A-– Reading: What is PEB?
 
 ### A1. PEB in SPM for DCM
 
@@ -48,14 +47,12 @@ git push
 You do not need to derive PEB from scratch. Understand and (if useful) write down:
 
 - **First level**: Subject *s* has parameters θ_s with likelihood from the DCM; prior on θ_s.
-- **Second level**: The prior mean (and possibly variance) for θ_s is **estimated from the group** (and covariates). That is the “empirical” part: the group data inform the prior for each subject.
+- **Second level**: The prior mean (and variance) for θ_s is **estimated from the group** (and covariates). That is the “empirical” part: the group data inform the prior for each subject.
 - **Covariates**: A design matrix **X** (e.g. intercept, group, age) multiplies second-level parameters so that subject-specific means depend on group and other variables. PEB then estimates these second-level effects and their uncertainty.
-
-If the course or supervisor provides a specific reference with equations (e.g. Friston et al.), use those and note where the empirical prior and the design matrix appear.
 
 ---
 
-## Part B – Why PEB rather than GLM for group DCM?
+## Part B - Why PEB rather than GLM for group DCM?
 
 ### B1. Simple GLM approach
 
@@ -73,7 +70,7 @@ Read one or two short sections or papers that compare “PEB for DCM” vs “ex
 
 ---
 
-## Part C – Writing in Overleaf (thesis)
+## Part C - Writing in Overleaf (thesis)
 
 In your **Overleaf thesis project**:
 
@@ -95,3 +92,4 @@ You are finished if:
 - you understand the main idea of the key equations (first level, second level, empirical prior, design matrix)
 - you have written in Overleaf: what PEB is, and why we use PEB rather than a simple GLM for group DCM
 - you have committed and pushed any notes to the repo
+
